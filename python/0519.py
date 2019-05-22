@@ -9,35 +9,21 @@ b[0] = "j"
 print(b)
 # ['j', 'y', 't', 'h', 'o', 'n’]
 
-print("Python" [0])
-# 'P'
-print("Python" [-1])
-#'n'
-
-print("Python" [0:3])
-#'Pyt'
-print("Python" [0:4])
-#'Pyth'
-print("Python" [:])
-# 'Python'
-print("Python" [0:len("python")])
-# 'Python'
-var = "Paython is Good!"
-print(var[0:6])
-# 'Paytho'
-print(var[7:9])
-#' i'
-print(var[0:9:1]) # 1씩증가
-# 'Paython i'
-print(var[0:9])
-# 'Paython i'
-print(var[0:9:2]) # 2씩 증가
-# 'Pyhni'
-print(var[0:9:3])
-# 'Ptn'
+print("Python" [0]) # P
+print("Python" [-1]) # n
+print("Python" [0:3]) #Pyt
+print("Python" [0:4]) # Pyth
+print("Python" [:]) # Python
+print("Python" [0:len("python")]) # Python
+var = "Python is Good!"
+print(var[0:6]) # Python
+print(var[7:9]) # is
+print(var[0:9:1]) # 1씩증가, Python is
+print(var[0:9]) # Python is
+print(var[0:9:2]) # 2씩 증가 , Pto s
+print(var[0:9:3]) # Ph
 numbers = "0123456789"
-print(numbers[::2])
-# '02468'
+print(numbers[::2]) # 02486 2씩 증가
 
 likes = "치킨, 고양이, 씨리얼"
 likes
