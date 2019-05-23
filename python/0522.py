@@ -23,7 +23,6 @@ for el in csv_list:
 
 
 keys = []
-
 for el in csv_list[0].split(','):
     keys.append(el.strip(' '))
 
@@ -42,12 +41,12 @@ print(result)
 # [{'이름': '철수', '연락처': '010-1234-1234', '나이': '23', '이메일': 'chulsu@gmail.com'}, {'이름': '영희', '연락처': '010-4321-4321', '나이': '30', '이메일': 'Oh@gmail.com'}]
 
 # set
-set1 = {1, 2, 3, 4,4, 4, 5, 5}
-print(set1)
+set1 = {1, 2, 3, 4, 4, 4, 5, 5}
+print(set1) # {1, 2, 3, 4, 5}
 set2 = {}
-print(type(set2))
+print(type(set2)) # <class 'dict'>
 set2 = set()
-print(set2)
+print(set2) # set()
 
 set2.add(3)
 set2.add(4)
@@ -55,13 +54,13 @@ set2.add(5)
 set2.add(6)
 set2.add(6)
 print(set2)
+
 # 두 dictornay 합치기
 print(set1.union(set2))
 print(set1.difference(set2))
 print(set2.difference(set1))
 
 # set1 변수에 1~100까지 숫자중 3의 배수
-
 set1 = set()
 set2 = set()
 set3 = set()
@@ -83,7 +82,7 @@ print("3의 배수:",set1)
 print("5의 배수:",set2)
 print("15의 배수:",set3)
 # set3에서 set1에 포함되지 않는 숫자를 출력하세요. 없다.
-print("set3.difference(set1)") # 공통값은 제외하고 출력시 difference set3-set1도 같은 결과
+print("set2.difference(set1)", set2.difference(set1)) # 공통값은 제외하고 출력시 difference set2-set1도 같은 결과
 
 
 a = []
@@ -107,12 +106,12 @@ for i in range(1, 2+1):
 print(result)
 # [[1, 2], [1, 2]]
 
+# List Comprehension
 # 변수를 사용하지 않은 경우 i 대신 _사용할 수 있다.
 result =[[x for x in range(1, 3+1)] for _ in range(2)]
 print(result)
 # [[1, 2, 3], [1, 2, 3]]
 
-# List Comprehension
 # 1~100까지 숫자중 3의 배수인 숫자만 가진 리스트만들기
 resultset = [x for x in range(1,100+1) if x % 3 == 0 ]
 print("1~100까지 숫자중 3의 배수 리스트:\n",resultset)
@@ -120,4 +119,3 @@ print("1~100까지 숫자중 3의 배수 리스트:\n",resultset)
 # [[1,2,3],[1,2,3],[1,2,3]] 리스트 만들기
 resultset = [[x for x in range(1, 3+1)] for _ in range(3)]
 print("[1,2,3]*3 리스트 만들기\n",resultset)
-

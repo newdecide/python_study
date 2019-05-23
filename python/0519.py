@@ -1,4 +1,4 @@
-# 타입과 연산
+# 01-04~05-타입과 연산(Numbers, String, boolean), 데이터 구조(List)
 b=["p","y","t","h","o","n"] # b
 print(b)
 # ['p', 'y', 't', 'h', 'o', 'n']
@@ -70,3 +70,20 @@ print("당신의 이름은", name,"입니다", end=" ")
 print("당신의 이름은", len(name),"글자입니다.")
 print("당신의 나이는" +age+"살 입니다.")
 print("당신의 연릭처는"+phone + "입니다.")
+
+# 스트링 타입
+print("안녕하세요 {name}씨, 좋은 {time}입니다.".format(name="로이", time="저녁"))
+
+# mutable 수정 가능 immutable 수정불가능
+# String은 immutable 수정불가능
+
+# 빈 리스트 생성
+likes = []
+# 리스트 추가하는 법 append
+likes.append('Python')
+likes.append('cats')
+likes.append('judo')
+print(likes)
+print(likes[0])
+print(likes[1])
+print(likes[2])

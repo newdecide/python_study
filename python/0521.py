@@ -24,7 +24,7 @@ for i in range(1, 100+1):
         n+=i
 print("2와 3의배수의 합:",n)
 
-# 01-08 데이터구조
+# 01-08 데이터구조(Dictionary, set), tuple(list comprehension)
 
 list1 = [1, 2, 3, 4, 5]
 print("list1: ",list1)
