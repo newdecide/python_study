@@ -7,7 +7,7 @@
 # 함수 만드는 법
 # def func_name(arg):
 #     #코드 작성
-#     print("heelo, func")
+#     print("hello, func")
 #     return arg # 리턴 없을시 생략가능
 
 def print_hello_world():
