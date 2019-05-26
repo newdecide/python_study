@@ -16,7 +16,7 @@
 # f.write("Hello World!")
 # f.close()
 
-f = open("/Users/odongju/Desktop/Python/hello.txt", "r")
+f = open("/Users/odongju/Desktop/python_study/python/hello.txt", "r")
 # 파일 내용 추가시
 # for i in range(2, 10+1):
 #     content = str(i) + "번째 줄입니다.\n"
@@ -34,6 +34,10 @@ print(f.readline())
 # f.close
 
 # pwd 현재위치 파악할 수 있다.
+
+# f = open("./hello2.txt", "w")
+# f.write("Hello World!")
+# f.close()
 
 # 1) 파일을 만들어서 "hello world!"를 10줄 써 넣으세요.
 f2 = open("./hello2.txt","r") # w 쓰기, a 추가 r 읽기
