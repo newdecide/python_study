@@ -15,14 +15,12 @@ student1_info = {
     "first_name":"sol",
     "last_name":"hyun",
     "student_no":3498
-
 }
 
 student2_info = {
     "first_name":"park",
     "last_name":"won",
     "student_no":1345
-
 }
 
 student3_info = {
@@ -36,6 +34,7 @@ student4_info = {
     "last_name":"jasuk",
     "student_no":2048
 }
+
 students.append(student1_info)
 students.append(student2_info)
 students.append(student3_info)
@@ -51,7 +50,6 @@ sorted_students = sorted(students, key=lambda x: x['student_no'])
 print(sorted_students)
 
 # lambda
-
 # a = lambda x : x+1
 # a(3)
 # a(5)
