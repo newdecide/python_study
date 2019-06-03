@@ -83,23 +83,3 @@ for _ in range(100):
     target.append(choice(raw))
 
 print("-50부터 ~ 50까지 랜덤숫자 정렬 전", target)
-
-def _merge(A, B):
-    result = []
-    length = len(A) + len(B)
-    for _ in range(length):
-        try:
-            if A[0] > B[0]:
-                result.append(B[0])
-                B.remove(B[0])
-            else:
-                result.append(A[0])
-                A.remove(A[0])
-        except IndexError:
-            if len(A):
-                result += A
-                break
-            else:
-                result += B
-                break
-    return result
